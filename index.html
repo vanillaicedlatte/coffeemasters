@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CoffeeMasters</title>
+</head>
+<body>
+    <section class="header">
+        <img src="coffee_masters_logo.png">
+        <h1>CoffeeMasters</h1>
+    </section>
+    <section class="checkout">
+        <div class="items">
+            <p class="section-header">Items</p>
+            <div class="item-list">
+                <div class="single-item">
+                    <div class="quantity">1x</div>
+                    <div class="item">
+                    <div class="item-name">Cappuccino</div>
+                    <div class="customizations">
+                        <ul>
+                            <li>Lite foam</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="item-price">$3.35</div>
+                </div>
+                <div class="single-item">
+                    <div class="quantity">1x</div>
+                    <div class="item">
+                    <div class="item-name">Cappuccino</div>
+                    <div class="customizations">
+                        <ul>
+                            <li>Lite milk</li>
+                            <li>Double espresso</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="item-price">$3.85</div>
+                </div>
+                <div class="single-item">
+                    <div class="quantity">1x</div>
+                    <div class="item">
+                    <div class="item-name">Croissant</div>
+                    <div class="customizations">
+                        <ul>
+                            <li>Butter</li>
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="item-price">$2.45</div>
+                </div>
+            </div>
+        </div>
+        <div class="payment">
+        <div class="name">
+            <p class="section-header">Name</p>
+            <label for="name">Name for order</label>
+            <input id="name" placeholder="i.e. John Smith">
+        </div>
+        <div class="card">
+            <p class="section-header">Payment</p>
+            <label for="card">Card number</label>
+            <input id="card" placeholder="1234 5678 9012 3456">
+            <label for="ccv">CCV number</label>
+            <input id="ccv" placeholder="001">
+        </div>
+        </div>
+        <div class="place-order">
+            <div class="total">
+                <div class="subtotal">
+                    <p>Subtotal:</p>
+                    <p>$9.65</p>
+                </div>
+                <div class="tax">
+                    <p>Tax:</p>
+                    <p>$0.82</p>
+                </div>
+                <div class="order-total">
+                    <p>Total:</p>
+                    <p>$10.47</p>
+                </div>
+            </div>
+            <div class="submit">
+                <button>Place order</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

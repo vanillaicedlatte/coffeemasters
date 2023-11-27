@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #efefef;
+}
+
+.header {
+    background-color: #412415;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+}
+
+.header h1 {
+    color: #FAF2BF;
+    font-size: 14px;
+}
+
+.header img {
+    width: 25px;
+}
+
+.section-header {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #885a2d;
+}
+
+.items {
+    grid-area: items;
+}
+
+.payment {
+    grid-area: payment;
+}
+
+.place-order {
+    grid-area: place-order;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkout {
+    padding: 24px;
+    display: grid;
+    grid-template-areas: "items payment" "place-order place-order";
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+  }
+
+/* @media screen and (max-width: 768px) {
+    .checkout {
+        grid-template-columns: 1fr;
+        grid-template-areas: "items" "payment" "place-order"
+    }
+}
+*/
+
+.items, .payment, .place-order {
+    width: 100%;
+}
+
+.items, .name, .card {
+    background-color: #eee1d5;
+    border-radius: 8px;
+    padding: 24px;
+}
+
+.single-item {
+    padding: 8px;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+.single-item:not(:last-child) {
+    border-bottom: #DEB993 solid 2px;
+}
+
+.customizations {
+    color: #B08968;
+    font-size: 14px;
+}
+
+.customizations ul {
+    list-style: none;
+}
+
+.customizations li {
+    padding: 4px 0;
+}
+
+.item {
+    display: block;
+}
+
+.item-name {
+    font-weight: 600;
+    padding: 4px 0;
+}
+
+.item-price {
+    font-weight: 600;
+    text-align: right;
+}
+
+.card {
+    margin-top: 24px;
+}
+
+input {
+    border: #885a2d solid 2px;
+    border-radius: 25px;
+    display: block;
+    padding: 12px;
+    width: 100%;
+}
+
+label {
+    font-size: 12px;
+    color: #885a2d;
+    position: relative;
+    left: 16px;
+    top: 8px;
+    padding: 3px;
+    background-color: #EDE0D4;
+}
+
+.total {
+    width: 300px;
+    padding: 16px;
+}
+
+.subtotal, .tax, .order-total {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+}
+
+.order-total {
+    font-weight: 600;
+}
+
+.submit {
+    width: 100%;
+    padding: 8px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #DEB993;
+}
